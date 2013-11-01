@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "dependencies": {
+    "rest-now": "0.2.1",
+    "express": "3.0.3",
+    "mustache": "0.7.0",
+    "mongoose": "3.4.0",
+    "nodemailer": "0.3.39"
+  }
+}

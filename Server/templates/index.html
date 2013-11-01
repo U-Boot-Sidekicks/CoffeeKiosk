@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>coffIT - Admin</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link href="/favicon.ico" title="Icon" type="image/x-icon" rel="icon" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>coffIT<small>administrator</small></h1>
+        </div>
+
+        <div id="users-list">
+        {{#users}}
+        <div>
+            <form id="uploadForm"
+                enctype="multipart/form-data"
+                action="/admin"
+                method="post">
+
+                <input id="id" name="id" class="invisible" value="{{_id}}"/>
+
+                <img id="pic" src="/img/{{img}}" onclick="simulateClick('userPhoto{{_id}}')" class="userPic"/>
+                <input name="name" value="{{name}}" onclick="" class="coffeeInput long"/>
+                <input name="email" value="{{email}}" onclick="" class="coffeeInput long"/>
+                <input name="balance" value="{{balance}}" onclick="" class="coffeeInput short"/>
+                <input type="submit" name="submit" value="update" class="btn btn-success"/>
+                <a href="/admin/edit/{{_id}}" class="btn btn-info">edit</a>
+                <input type="submit" name="submit" value="delete" class="btn btn-danger"/>
+            </form>
+        </div>
+        {{/users}}
+
+        </div>
+
+        <div class="form-actions">
+            <form action="/admin" method="post">
+                <button id="add-user" type="submit" class="btn btn-success" name="submit" value="create">add User</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

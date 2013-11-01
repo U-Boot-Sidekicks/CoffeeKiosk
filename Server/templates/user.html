@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>coffIT - Admin</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link href="/favicon.ico" title="Icon" type="image/x-icon" rel="icon" />
+</head>
+
+<body>
+    <form id="uploadForm"
+        enctype="multipart/form-data"
+        action="/admin/edit/{{user._id}}"
+        method="post"
+        class="form-horizontal">
+    <div class="container">
+        <div class="page-header">
+            <h1>coffIT<small>administrator</small></h1>
+        </div>
+        <div class="row">
+            <div class="span2">
+                <img id="pic" src="/img/{{user.img}}" class="userPic_huge"/>
+            </div>
+        <div class="span10">
+
+            <div class="control-group">
+            <label class="control-label" for="name">Name</label>
+            <div class="controls">
+                <input name="name" value="{{user.name}}" onclick="" class="coffeeInput long"/>
+            </div>
+            </div>
+
+            <div class="control-group">
+            <label class="control-label" for="email">Email</label>
+            <div class="controls">
+                <input name="email" value="{{user.email}}" onclick="" class="coffeeInput long"/>
+            </div>
+            </div>
+
+            <div class="control-group">
+            <label class="control-label" for="balance">Balance</label>
+            <div class="controls">
+                <input name="balance" value="{{user.balance}}" onclick="" class="coffeeInput short"/>
+            </div>
+            </div>
+
+            <div class="control-group">
+            <label class="control-label" for="userPhoto">Image</label>
+            <div class="controls">
+                <input type="file" id="userPhoto{{user._id}}" name="userPhoto" class="coffeeInput long" onchange="console.log('xxx')"/>
+            </div>
+            </div>
+
+            <input id="id" name="id" class="invisible" value="{{_id}}"/>
+        </div>
+    </div>
+        <div class="form-actions">
+            <button id="save-user" type="submit" class="btn btn-success" name="submit" value="save">save User</button>
+            <a href="/admin" class="btn">cancel</a>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
