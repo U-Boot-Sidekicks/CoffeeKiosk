@@ -37,7 +37,7 @@ Example of the admin panel to manage users and their balances.
 
 ![Admin UI](https://raw.github.com/U-Boot-Sidekicks/CoffeeKiosk/master/Screenshots/Image2.png)
 
-This example shows the app running on the old iPad 1 (iOS 5.1) in the custom case locked to a table with standard Kensington lock.
+This example shows the app running on the old iPad 1 (iOS 6.1) in the custom case locked to a table with standard Kensington lock.
 
 ![Hardware Setup](https://raw.github.com/U-Boot-Sidekicks/CoffeeKiosk/master/Screenshots/Image1.png)
 
