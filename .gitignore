@@ -1,4 +1,5 @@
 .DS_Store
+Server/public/img/*.jpg
 
 ###
 # node.js related
