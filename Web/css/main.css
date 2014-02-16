@@ -1,0 +1,31 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  background-color: #efefef;
+}
+.modal-content {
+  padding: 20px 20px 20px 20px;
+}
+.loading-panel {
+  padding: 140px 115px;
+  text-align: center;
+}
+.top-navigation {
+  display: none;
+}
+.user-box {
+  background-color: #efefef;
+  float: left;
+  width: 220px;
+  height: 220px;
+  margin: 5px;
+}
+.user-img {
+  width: 150px;
+  height: 130px;
+  margin: 0 auto;
+  background-image:url("http://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
