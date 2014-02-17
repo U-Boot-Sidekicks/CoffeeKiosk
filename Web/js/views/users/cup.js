@@ -30,6 +30,9 @@ define(
       },
 
       yesClicked: function() {
+        $('.btn-yes').html('Saving...');
+        $('.btn-yes').prop('disabled', true);
+
         var self = this;
         $.ajax({
           type: 'POST',

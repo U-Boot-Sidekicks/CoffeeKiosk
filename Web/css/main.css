@@ -10,9 +10,6 @@ body {
   padding: 140px 115px;
   text-align: center;
 }
-.top-navigation {
-  display: none;
-}
 .user-box {
   background-color: #efefef;
   float: left;

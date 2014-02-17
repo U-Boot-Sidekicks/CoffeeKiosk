@@ -80,13 +80,13 @@ define([
     },
 
     showLoading: function() {
-      $('.top-navigation').hide();
+      //$('.top-navigation').hide();
       $('.starter-template').show();
       $('#content').hide();
     },
 
     hideLoading: function() {
-      $('.top-navigation').show();
+      //$('.top-navigation').show();
       $('.starter-template').hide();
       $('#content').show();
     }
